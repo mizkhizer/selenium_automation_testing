@@ -1,0 +1,28 @@
+
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="2">
+
+	
+	<!--  Chrome Test -->>
+    <test name="ChromeTest">
+
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="demotest.HomePageTest"/>
+        </classes>
+
+    </test>
+
+
+	<!--  Microsoft Edge Test -->>
+    <test name="FirefoxTest">
+
+        <parameter name="browser" value="edge"/>
+
+        <classes>
+            <class name="demotest.HomePageTest"/>
+        </classes>
+
+    </test>
+
+</suite>
